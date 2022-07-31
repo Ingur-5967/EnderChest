@@ -19,8 +19,6 @@ public class EnderChestCommands implements CommandExecutor {
 
         if(!(sender instanceof Player)) return true;
 
-        ((Player)sender).getInventory().setItem(0, new ItemBuilder(new ItemStack(Material.CHEST)).setName("&a123").getReplacedItem());
-
         new InventoryHandler((Player) sender).openCustomInventory();
         return true;
     }
