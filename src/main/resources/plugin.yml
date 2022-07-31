@@ -1,0 +1,7 @@
+name: EnderChest
+version: '${project.version}'
+main: ru.solomka.enderchest.Main
+authors: [ Solomka ]
+commands:
+  ec:
+    usage: /ec
