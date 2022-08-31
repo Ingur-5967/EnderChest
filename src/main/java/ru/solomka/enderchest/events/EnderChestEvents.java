@@ -16,7 +16,7 @@ public class EnderChestEvents implements Listener {
         if (!inventory.getTitle().equals("Инвентарь " + event.getPlayer().getName())) return;
 
         for (int i = 0; i < inventory.getSize(); i++)
-            new InventoryHandler((Player) event.getPlayer()).save(inventory, i);
+            new InventoryHandler(event.getPlayer()).save(inventory, i);
 
     }
 }
