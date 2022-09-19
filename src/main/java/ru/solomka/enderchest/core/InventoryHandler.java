@@ -42,7 +42,7 @@ public class InventoryHandler {
         ItemStack item = inventory.getItem(slot);
         if (item == null) {
             if (file.getString("Inventory.Items." + slot) != null)
-                file.set("Inventory.Items." + slot, (Object) null);
+                file.set("Inventory.Items." + slot, null);
             return;
         }
 
