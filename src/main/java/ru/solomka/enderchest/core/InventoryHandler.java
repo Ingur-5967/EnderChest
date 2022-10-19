@@ -27,7 +27,7 @@ public class InventoryHandler {
 
     public void openCustomInventory() {
         String[] defParams = {"Title", "Items"};
-        Object[] defArgs = {"Инвентарь " + p.getName(), ""};
+        String[] defArgs = {"Инвентарь " + p.getName(), ""};
 
         Inventory inventory = Bukkit.createInventory(null, 9, "Инвентарь " + p.getName());
 
